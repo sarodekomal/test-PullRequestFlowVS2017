@@ -1,6 +1,5 @@
-projectKey=org.sonarqube:sonarqube-scanner
-serverUrl=http://localhost:9000
+projectKey=Travel.Connectors.HotelserverUrl=http://192.168.11.17:9000
 serverVersion=6.4.0.25310
-dashboardUrl=http://localhost:9000/dashboard/index/org.sonarqube:sonarqube-scanner
+dashboardUrl=http://192.168.11.17:9000/dashboard/index/org.sonarqube:sonarqube-scanner
 ceTaskId=AVx35FIihPIGwgPo2NSO
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AVx35FIihPIGwgPo2NSO
+ceTaskUrl=http://192.168.11.17:9000/api/ce/task?id=AVx35FIihPIGwgPo2NSO
