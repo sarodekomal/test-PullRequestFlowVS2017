@@ -11,7 +11,13 @@ namespace Travel.Connectors.Hotel.Controllers
         // GET api/values
         [HttpGet]
         public IEnumerable<string> Get(string test)
-        {
+        { 
+            string test1 = "sdf";
+
+            if ( test != "")
+            {
+                test1 = "sdfsd";
+            }
             return new string[] { "value1", "value2 test data"};
         }
 
@@ -55,6 +61,11 @@ namespace Travel.Connectors.Hotel.Controllers
         public int  Delete(int id)
         {
             return id;
+        }
+
+        public void testData()
+        {
+
         }
     }
 }
