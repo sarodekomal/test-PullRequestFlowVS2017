@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
@@ -8,10 +9,12 @@ namespace Travel.Connectors.Hotel.Controllers
     [Route("api/[controller]")]
     public class ValuesController : Controller
     {
+
         // GET api/values
         [HttpGet]
         public IEnumerable<string> Get(string test)
         {
+            //testData();
             return new string[] { "value1", "value2 test data"};
         }
 
@@ -56,6 +59,32 @@ namespace Travel.Connectors.Hotel.Controllers
         {
             return id;
         }
+
+        //public string t = null;
+        //public string testData()
+        //{
+        //    int? nullable = null;
+        //    UseValue(nullable.Value); // Noncompliant
+        //    return t;
+        //}
+
+        //private void UseValue(int value)
+        //{
+        //    throw new NotImplementedException();
+        //}
+
+        //public int Foo
+        //{
+        //    get
+        //    {
+        //        throw new Exception(); // Noncompliant
+        //    }
+        //    set
+        //    {
+        //        // do set ...
+        //    }
+        //}
+
     }
 }
 
