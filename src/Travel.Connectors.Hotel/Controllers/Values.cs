@@ -60,30 +60,30 @@ namespace Travel.Connectors.Hotel.Controllers
             return id;
         }
 
-        //public string t = null;
-        //public string testData()
-        //{
-        //    int? nullable = null;
-        //    UseValue(nullable.Value); // Noncompliant
-        //    return t;
-        //}
+        public string t = null;
+        public string testData()
+        {
+            int? nullable = null;
+            UseValue(nullable.Value); // Noncompliant
+            return t;
+        }
 
-        //private void UseValue(int value)
-        //{
-        //    throw new NotImplementedException();
-        //}
+        private void UseValue(int value)
+        {
+            throw new NotImplementedException();
+        }
 
-        //public int Foo
-        //{
-        //    get
-        //    {
-        //        throw new Exception(); // Noncompliant
-        //    }
-        //    set
-        //    {
-        //        // do set ...
-        //    }
-        //}
+        public int Foo
+        {
+            get
+            {
+                throw new Exception(); // Noncompliant
+            }
+            set
+            {
+                // do set ...
+            }
+        }
 
     }
 }
