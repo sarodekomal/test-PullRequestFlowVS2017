@@ -15,7 +15,7 @@ namespace Travel.Connectors.Hotel.Controllers
         public IEnumerable<string> Get(string test)
         {
             //testData();
-            return new string[] { "value1", "value2 test data 1"};
+            return new string[] { "value1", "value23"};
         }
 
         // GET api/values/5
@@ -60,31 +60,31 @@ namespace Travel.Connectors.Hotel.Controllers
             return id;
         }
 
-        //public string t = null;
-        //public string testData()
-        //{
-        //    int? nullable = null;
-        //    UseValue(nullable.Value); // Noncompliant
-        //    return t;
-        //}
+        public string t = null;
+        public string testData()
+        {
+            int? nullable = null;
+            UseValue(nullable.Value); // Noncompliant
+            return t;
+        }
 
-        //private void UseValue(int value)
-        //{
-        //    throw new NotImplementedException();
-        //}
+        private void UseValue(int value)
+        {
+            throw new NotImplementedException();
+        }
 
-        //public int Foo
-        //{
-        //    get
-        //    {
-        //        throw new Exception(); // Noncompliant
-        //    }
-        //    set
-        //    {
+        public int Foo
+        {
+            get
+            {
+                throw new Exception(); // Noncompliant
+            }
+            set
+            {
 
-        //        // do set ...
-        //    }
-        //}
+                // do set ...
+            }
+        }
 
     }
 }
